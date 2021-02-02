@@ -4,19 +4,20 @@ using System.Collections.Generic;
 
 namespace Tarea002
 {
-    class Cliente
+   public class Cliente
     {
         public Cliente() 
         {
             Telefono = new List<string>();
         }
-        public Cliente(string nombre, string apellidoPaterno, string apellidoMaterno)
+
+        public Cliente(string nombre, string apellidoPaterno, string apellidoMaterno) : this()
         {
             Nombre = nombre;
             ApellidoPaterno = apellidoPaterno;
             ApellidoMaterno = apellidoMaterno;
         }
-        public Cliente(string dni, DateTime fechaNacimiento)
+        public Cliente(string dni, DateTime fechaNacimiento) :this()
         {
             Dni = dni;
             FechaNacimiento = fechaNacimiento;
