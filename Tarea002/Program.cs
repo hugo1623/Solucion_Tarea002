@@ -25,21 +25,36 @@ namespace Tarea002
                 $"Fecha de Nacimiento : {cliente1.FechaNacimiento} \n" +
                 $"Dni : {cliente1.Dni} \n" +
                 $"Edad :{cliente1.Edad} \n" +
-                $"Tengo : {cliente1.Telefono.Count} Telefono \n");
+                $"Tengo : {cliente1.Telefono.Count} Telefonos \n");
 
             Console.WriteLine("************ CLIENTE  2 ************");
 
             var cliente2 = new Cliente("Kyra", "Luis01", "Rodriguez01");
-            Console.WriteLine("Nombre:" + cliente2.Nombre);
-            Console.WriteLine("Apellido Paterno :" + cliente2.ApellidoPaterno);
+            cliente2.Telefono.Add("000211");
+            cliente2.Telefono.Add("021548");
+            cliente2.Telefono.Add("126254");
+            Console.WriteLine(
+                $"Nombre: {cliente2.Nombre} \n" +
+                $"Apellido Paterno : {cliente2.ApellidoPaterno} \n" +
+                $"Apellido Materno : { cliente2.ApellidoMaterno} \n" +
+                $"Tengo : {cliente2.Telefono.Count} Telefonos \n");
+
             Console.WriteLine("Apellido Materno : " + cliente2.ApellidoMaterno + "\n");
 
-            Console.WriteLine("************ CLIENTE  3 ************ " );
-            DateTime fecha1 = new DateTime(2000, 10, 26, 8, 10, 5);
-            cliente1.FechaNacimiento = fecha1;
+            Console.WriteLine("************ CLIENTE  3 ************ ");
+
             var cliente3 = new Cliente("16170022", fecha);
-            Console.WriteLine("Dni :" + cliente3.Dni);
-            Console.WriteLine("Fecha de Nacimiento :" + cliente3.FechaNacimiento + "\n");
+            DateTime fecha1 = new DateTime(2000, 10, 26, 8, 10, 5);
+            cliente3.FechaNacimiento = fecha1;
+            cliente3.Telefono.Add("788542");
+            cliente3.Telefono.Add("956321");
+            cliente3.Telefono.Add("423215");
+            cliente3.Telefono.Add("164829");
+            Console.WriteLine(
+                $"Dni : {cliente3.Dni } \n" +
+                $"Fecha de Nacimiento : {cliente3.FechaNacimiento} \n" +
+                $"Tengo : {cliente3.Telefono.Count} Telefonos \n");
+           
 
 
 
