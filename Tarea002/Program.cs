@@ -28,10 +28,20 @@ namespace Tarea002
                 $"Tengo : {cliente1.Telefono.Count} Telefono \n");
 
             Console.WriteLine("************ CLIENTE  2 ************");
+
             var cliente2 = new Cliente("Kyra", "Luis01", "Rodriguez01");
             Console.WriteLine("Nombre:" + cliente2.Nombre);
             Console.WriteLine("Apellido Paterno :" + cliente2.ApellidoPaterno);
-            Console.WriteLine("Apellido Materno :" + cliente2.ApellidoMaterno);
+            Console.WriteLine("Apellido Materno : " + cliente2.ApellidoMaterno + "\n");
+
+            Console.WriteLine("************ CLIENTE  3 ************ " );
+            DateTime fecha1 = new DateTime(2000, 10, 26, 8, 10, 5);
+            cliente1.FechaNacimiento = fecha1;
+            var cliente3 = new Cliente("16170022", fecha);
+            Console.WriteLine("Dni :" + cliente3.Dni);
+            Console.WriteLine("Fecha de Nacimiento :" + cliente3.FechaNacimiento + "\n");
+
+
 
         }
     }
