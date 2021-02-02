@@ -27,6 +27,11 @@ namespace Tarea002
                 $"Edad :{cliente1.Edad} \n" +
                 $"Tengo : {cliente1.Telefono.Count} Telefono \n");
 
+            Console.WriteLine("************ CLIENTE  2 ************");
+            var cliente2 = new Cliente("Kyra", "Luis01", "Rodriguez01");
+            Console.WriteLine("Nombre:" + cliente2.Nombre);
+            Console.WriteLine("Apellido Paterno :" + cliente2.ApellidoPaterno);
+            Console.WriteLine("Apellido Materno :" + cliente2.ApellidoMaterno);
 
         }
     }
