@@ -13,7 +13,6 @@ namespace Tarea002
             DateTime fecha = new DateTime(1994, 09, 16, 18, 0, 5);
             cliente1.FechaNacimiento = fecha;
             cliente1.Dni = "72539928";
-            cliente1.Edad = 100;
             cliente1.Telefono.Add("0002133");
             cliente1.Telefono.Add("115552");
 
